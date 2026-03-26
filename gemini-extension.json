@@ -1,0 +1,40 @@
+{
+  "name": "memoriant-docforce-skill",
+  "version": "1.0.0",
+  "description": "Documentation drift monitor — compares code and config against documentation, surfaces mismatches (doc says X, code does Y), and appends evidence records.",
+  "author": "Nathan Maine",
+  "repository": "https://github.com/NathanMaine/memoriant-docforce-skill",
+  "license": "MIT",
+  "gemini": {
+    "cli_version": ">=0.1.0"
+  },
+  "skills": [
+    {
+      "name": "doc-drift-monitor",
+      "description": "Compare code and config files against documentation to find drift. Classify each mismatch by severity and produce a structured report with evidence logging.",
+      "file": "./skills/doc-drift-monitor/SKILL.md",
+      "triggers": [
+        "check documentation drift",
+        "are my docs up to date",
+        "doc drift",
+        "documentation is wrong",
+        "find docs vs code mismatches",
+        "documentation drift monitor",
+        "living docs check"
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "name": "docforce-agent",
+      "description": "Autonomous agent that detects and reports documentation drift between code and documentation files.",
+      "file": "./agents/docforce-agent.md",
+      "model": "gemini-2.0-flash"
+    }
+  ],
+  "install": {
+    "claude_code": "claude mcp add memoriant-docforce-skill",
+    "codex": "codex install NathanMaine/memoriant-docforce-skill",
+    "gemini": "gemini extension install NathanMaine/memoriant-docforce-skill"
+  }
+}

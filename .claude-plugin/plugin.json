@@ -1,0 +1,23 @@
+{
+  "name": "memoriant-docforce-skill",
+  "version": "1.0.0",
+  "description": "Documentation drift monitor for Claude Code — compares code and config snapshots against documentation excerpts, highlights mismatches (doc says X, code does Y), and appends evidence records to a JSONL audit log.",
+  "author": {
+    "name": "Nathan Maine",
+    "url": "https://github.com/NathanMaine"
+  },
+  "repository": "https://github.com/NathanMaine/memoriant-docforce-skill",
+  "license": "MIT",
+  "keywords": [
+    "documentation",
+    "drift",
+    "doc-drift",
+    "living-docs",
+    "evidence-log",
+    "memoriant",
+    "claude-code",
+    "skill"
+  ],
+  "skills": "./skills/",
+  "agents": "./agents/"
+}
