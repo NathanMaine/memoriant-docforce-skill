@@ -1,8 +1,6 @@
 ---
 name: doc-drift-monitor
 description: Compare code and config files against their documentation to find drift — places where the docs say one thing and the code does another. Produce a structured drift report and append an evidence record.
-version: 1.0.0
-tags: [documentation, drift, living-docs, evidence-log, code-quality]
 ---
 
 # Documentation Drift Monitor Skill
